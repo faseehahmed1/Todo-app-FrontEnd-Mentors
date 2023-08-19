@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary);
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}

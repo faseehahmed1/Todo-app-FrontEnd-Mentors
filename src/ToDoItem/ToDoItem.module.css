@@ -1,0 +1,55 @@
+.container {
+  background-color: var(--primary);
+  display: flex;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.container_inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.checkbox_container {
+  border: 1px solid var(--tertiary);
+  display: flex;
+  width: 26px;
+  height: 26px;
+  border-radius: 50em;
+  margin-right: 14px;
+  &:hover {
+    background: linear-gradient(var(--primary), var(--primary)) padding-box,
+      linear-gradient(-45deg, var(--checkbox-grad2), var(--checkbox-grad1))
+        border-box;
+    border-radius: 50em;
+    border: 1px solid transparent;
+  }
+}
+
+.checkbox_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    -45deg,
+    var(--checkbox-grad2),
+    var(--checkbox-grad1)
+  );
+}
+
+.checkbox {
+  overflow: hidden;
+}
+
+.todoItem {
+  width: 80%;
+}
+
+.del_button {
+  margin-left: 10px;
+  cursor: pointer;
+}

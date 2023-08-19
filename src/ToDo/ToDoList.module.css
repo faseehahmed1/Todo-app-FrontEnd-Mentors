@@ -1,0 +1,14 @@
+.container{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.todoList_footer{
+    display: flex;
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 15px 20px;
+    justify-content: space-between;
+    font-size: 12px;
+    border-top: 1px solid var(--secondary);
+}
