@@ -1,6 +1,7 @@
 .container{
     border-radius: 5px;
-    overflow: hidden;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .todoList_footer{
@@ -10,5 +11,10 @@
     padding: 15px 20px;
     justify-content: space-between;
     font-size: 12px;
-    border-top: 1px solid var(--secondary);
+}
+
+.clear_btn{
+    &:hover{
+        color: var(--p-main-hover)
+    }
 }

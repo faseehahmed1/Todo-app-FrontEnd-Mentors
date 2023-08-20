@@ -13,6 +13,9 @@
 }
 
 .checkbox_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--tertiary);
   display: flex;
   width: 26px;
@@ -47,6 +50,16 @@
 
 .todoItem {
   width: 80%;
+  color: var(--p-main);
+  &:hover{
+    color: var(--p-main-hover);
+    cursor: pointer;
+  }
+}
+
+.todoItem_completed{
+  text-decoration: line-through;
+  color: var(--secondary)
 }
 
 .del_button {

@@ -15,7 +15,6 @@
 
   --mobile-img: url('./assets/bg-mobile-light.jpg');
   --desktop-img: url('./assets/bg-desktop-light.jpg');
-  /* Very Light Grayish Blue: hsl(236, 33%, 92%) ; */
 }
 
 :root.dark {
@@ -52,6 +51,7 @@ button{
   border: none;
   background: transparent;
   color: var(--secondary);
+  cursor: pointer;
 }
 
 
