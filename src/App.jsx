@@ -3,11 +3,16 @@ import Header from "./Header/Header.jsx";
 import Input from "./Input/Input";
 import ToDoList from "./ToDo/ToDoList";
 import Filters from "./Filters/Filters";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function App() {
-  const [toDoItems, setToDoItems] = useState([]);
+  const [toDoItems, setToDoItems] = useState(()=>JSON.parse(localStorage.getItem("todoItem")) ?? []);
   const [filter, setFilter] = useState("all");
+
+  useEffect(()=>{
+    localStorage.setItem("todoItem", JSON.stringify(toDoItems))
+  }, [toDoItems])
+
 
   return (
     <div className={classes.container}>
