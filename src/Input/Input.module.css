@@ -4,6 +4,7 @@
   padding: 15px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
+  box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)
 }
 
 input {

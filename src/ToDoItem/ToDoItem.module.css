@@ -65,4 +65,7 @@
 .del_button {
   margin-left: 10px;
   cursor: pointer;
+  &:hover{
+    color: var(--p-main-hover);
+  }
 }

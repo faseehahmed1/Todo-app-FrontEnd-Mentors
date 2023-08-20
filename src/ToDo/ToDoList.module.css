@@ -2,6 +2,8 @@
     border-radius: 5px;
     overflow: auto;
     overflow-x: hidden;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)
+
 }
 
 .todoList_footer{

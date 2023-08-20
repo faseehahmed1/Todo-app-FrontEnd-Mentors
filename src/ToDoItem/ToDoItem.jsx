@@ -9,16 +9,13 @@ export default function ToDoItem({toDoItem, toDoItems, setToDoItems}){
 
 
   function handleCheck(checked){
-    const copyArray = [...toDoItems]
-    const index = toDoItems.findIndex(item=>item.id === id)
-    const objToUpdate = copyArray[index]
-    objToUpdate.completed = checked;
-    setToDoItems(copyArray)
+    setToDoItems(toDoItems.map(item => 
+      item.id === id ? { ...item, completed: checked } : item
+    ));
   }
 
   function handleDelete(id){
-    const index = toDoItems.findIndex(item=>item.id === id)
-    setToDoItems([...toDoItems.slice(0, index), ...toDoItems.slice(index+1)])
+    setToDoItems(toDoItems.filter(item => item.id !== id));
   }
   
   const todoClass = clsx([classes.todoItem], {
@@ -32,7 +29,7 @@ export default function ToDoItem({toDoItem, toDoItems, setToDoItems}){
         <Checkbox
           icon={
             <div className={classes.checkbox_icon}>
-              {<img src={checkIcon} style={{ width: 14 }} alt="" />}
+              <img src={checkIcon} style={{ width: 14 }} alt="Checkbox icon" />
             </div>
           }
           borderRadius={20}
@@ -45,7 +42,7 @@ export default function ToDoItem({toDoItem, toDoItems, setToDoItems}){
         </div>
         <p className={todoClass}>{toDo}</p>
         <button onClick={()=>handleDelete(id)} className={classes.del_button}>
-        <img src={crossIcon} alt="" />
+        <img src={crossIcon} alt="del icon" />
       </button>
       </div>
       </div>
