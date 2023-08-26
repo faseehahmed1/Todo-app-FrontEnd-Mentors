@@ -20,7 +20,7 @@ Users should be able to:
 
 ### ✨ Deployed Site ✨
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Click Me!](https://faseehahmed1.github.io/Todo-app-FrontEnd-Mentors/)
 
 ## My process
 
